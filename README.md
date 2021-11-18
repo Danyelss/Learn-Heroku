@@ -28,9 +28,21 @@ JDBC_DATABASE_URL=jdbc:postgresql://localhost:5432/java_database_name
 ## Deploying to Heroku
 
 ```sh
-$ heroku create
+$ heroku git:remote -a aqueous-mountain-49327
 $ git push heroku main
 $ heroku open
+```
+
+## Push to Heroku
+
+```sh
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+```
+## You can use the git remote command to confirm that a remote named heroku has been set for your app:
+```
+$ git remote -v
 ```
 
 ## Documentation
